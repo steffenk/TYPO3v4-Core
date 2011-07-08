@@ -229,7 +229,7 @@ TYPO3.BackendLiveSearch = Ext.extend(Ext.form.ComboBox, {
 			* @type Ext.DataView
 			*/
 			this.helpView = new Ext.DataView({
-				applyTo: this.innerHelpList,
+				renderTo: this.innerHelpList,
 				tpl: this.helpTpl,
 				singleSelect: true,
 				selectedClass: this.selectedClass,
@@ -321,7 +321,7 @@ Ext.onReady(function() {
 		searchResultsPid: TYPO3.configuration.firstWebmountPid
 	});
 
-	TYPO3LiveSearch.applyToMarkup(Ext.get('live-search-box'));
+	TYPO3LiveSearch.render(Ext.get('live-search-box'));
 
 		// Add a blur event listener outside the ExtJS widget to handle clicks in iframes also.
 	Ext.get('live-search-box').on('blur', TYPO3LiveSearch.handleBlur, TYPO3LiveSearch);

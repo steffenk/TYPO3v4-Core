@@ -27,7 +27,8 @@
 Ext.ns('TYPO3');
 
 	// override splitregion to fit the splitbars in our design
-Ext.override(Ext.layout.BorderLayout.SplitRegion, {
+/* TODO: temporary disabled */
+/*Ext.override(Ext.layout.BorderLayout.SplitRegion, {
 	render : function(ct, p) {
 		Ext.layout.BorderLayout.SplitRegion.superclass.render.call(this, ct, p);
 
@@ -78,7 +79,7 @@ Ext.override(Ext.layout.BorderLayout.SplitRegion, {
 			this.splitEl.on("dblclick", this.onCollapseClick, this);
 		}
 	}
-});
+});*/
 /**
  * Extends the viewport with some functionality for TYPO3.
  *

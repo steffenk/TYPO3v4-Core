@@ -106,7 +106,7 @@ TYPO3.TCEFORMS = {
 		var textAreas = Ext.select("textarea[id^=tceforms-textarea-]");
 		textAreas.each(function(element) {
 			if (TYPO3.settings.textareaFlexible) {
-				var elasticTextarea = new Ext.ux.elasticTextArea().applyTo(element.dom.id, {
+				var elasticTextarea = new Ext.ux.elasticTextArea().renderTo(element.dom.id, {
 					minHeight: 50,
 					maxHeight: TYPO3.settings.textareaMaxHeight
 				});
