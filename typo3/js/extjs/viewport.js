@@ -176,4 +176,4 @@ TYPO3.Viewport = Ext.extend(Ext.Viewport, {
 	}
 });
 
-Ext.reg('typo3Viewport', TYPO3.Viewport);
+Ext.reg('typo3Viewport', 'TYPO3.Viewport');

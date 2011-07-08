@@ -408,7 +408,7 @@ TYPO3.EM.Settings = Ext.extend(Ext.FormPanel, {
 });
 
 // register xtype
-Ext.reg('extsettings', TYPO3.EM.Settings);
+Ext.reg('extsettings', 'TYPO3.EM.Settings');
 
 // window with repository edit/create form
 TYPO3.EM.EditRepository = Ext.extend(Ext.Window, {

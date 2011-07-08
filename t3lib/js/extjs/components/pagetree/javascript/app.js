@@ -400,4 +400,4 @@ TYPO3.ModuleMenu.App.registerNavigationComponent('typo3-pagetree', function() {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.App', TYPO3.Components.PageTree.App);
+Ext.reg('TYPO3.Components.PageTree.App', 'TYPO3.Components.PageTree.App');

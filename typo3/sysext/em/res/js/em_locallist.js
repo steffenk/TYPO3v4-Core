@@ -645,4 +645,4 @@ TYPO3.EM.LocalList = Ext.extend(Ext.grid.GridPanel, {
 
 });
 
-Ext.reg('TYPO3.EM.LocalList', TYPO3.EM.LocalList);
+Ext.reg('TYPO3.EM.LocalList', 'TYPO3.EM.LocalList');

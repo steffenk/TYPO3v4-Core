@@ -139,4 +139,4 @@ TYPO3.Components.PageTree.TreeEditor = Ext.extend(Ext.tree.TreeEditor, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.TreeEditor', TYPO3.Components.PageTree.TreeEditor);
+Ext.reg('TYPO3.Components.PageTree.TreeEditor', 'TYPO3.Components.PageTree.TreeEditor');

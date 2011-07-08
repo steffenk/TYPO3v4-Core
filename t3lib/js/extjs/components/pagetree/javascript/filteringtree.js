@@ -72,4 +72,4 @@ TYPO3.Components.PageTree.FilteringTree = Ext.extend(TYPO3.Components.PageTree.T
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.FilteringTree', TYPO3.Components.PageTree.FilteringTree);
+Ext.reg('TYPO3.Components.PageTree.FilteringTree', 'TYPO3.Components.PageTree.FilteringTree');

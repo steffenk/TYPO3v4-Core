@@ -421,4 +421,4 @@ TYPO3.EM.RepositoryList = Ext.extend(Ext.grid.GridPanel, {
 	}
 });
 
-Ext.reg('remoteextlist', TYPO3.EM.RepositoryList);
+Ext.reg('remoteextlist', 'TYPO3.EM.RepositoryList');

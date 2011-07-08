@@ -405,7 +405,7 @@ Ext.ux.HTMLAreaButton = Ext.extend(Ext.Button, {
 		}
 	}
 });
-Ext.reg('htmlareabutton', Ext.ux.HTMLAreaButton);
+Ext.reg('htmlareabutton', 'Ext.ux.HTMLAreaButton');
 /*
  * Ext.ux.Toolbar.HTMLAreaToolbarText extends Ext.Toolbar.TextItem
  */
@@ -451,7 +451,7 @@ Ext.ux.Toolbar.HTMLAreaToolbarText = Ext.extend(Ext.Toolbar.TextItem, {
 		}
 	}
 });
-Ext.reg('htmlareatoolbartext', Ext.ux.Toolbar.HTMLAreaToolbarText);
+Ext.reg('htmlareatoolbartext', 'Ext.ux.Toolbar.HTMLAreaToolbarText');
 /*
  * Ext.ux.form.HTMLAreaCombo extends Ext.form.ComboBox
  */
@@ -633,7 +633,7 @@ Ext.ux.form.HTMLAreaCombo = Ext.extend(Ext.form.ComboBox, {
 		this.getStore().destroy();
 	}
 });
-Ext.reg('htmlareacombo', Ext.ux.form.HTMLAreaCombo);
+Ext.reg('htmlareacombo', 'Ext.ux.form.HTMLAreaCombo');
 /***************************************************
  *  EDITOR FRAMEWORK
  ***************************************************/
@@ -773,7 +773,7 @@ HTMLArea.Toolbar = Ext.extend(Ext.Container, {
 		return true;
 	}
 });
-Ext.reg('htmlareatoolbar', HTMLArea.Toolbar);
+Ext.reg('htmlareatoolbar', 'HTMLArea.Toolbar');
 /*
  * HTMLArea.Iframe extends Ext.BoxComponent
  */
@@ -1401,7 +1401,7 @@ HTMLArea.Iframe = Ext.extend(Ext.BoxComponent, {
 		return true;
 	}
 });
-Ext.reg('htmlareaiframe', HTMLArea.Iframe);
+Ext.reg('htmlareaiframe', 'HTMLArea.Iframe');
 /*
  * HTMLArea.StatusBar extends Ext.Container
  */
@@ -1671,7 +1671,7 @@ HTMLArea.StatusBar = Ext.extend(Ext.Container, {
 		return true;
 	}
 });
-Ext.reg('htmlareastatusbar', HTMLArea.StatusBar);
+Ext.reg('htmlareastatusbar', 'HTMLArea.StatusBar');
 /*
  * HTMLArea.Framework extends Ext.Panel
  */
@@ -1959,7 +1959,7 @@ HTMLArea.Framework = Ext.extend(Ext.Panel, {
 		return true;
 	}
 });
-Ext.reg('htmlareaframework', HTMLArea.Framework);
+Ext.reg('htmlareaframework', 'HTMLArea.Framework');
 /***************************************************
  *  HTMLArea.Editor extends Ext.util.Observable
  ***************************************************/
@@ -3826,7 +3826,7 @@ Ext.ux.menu.HTMLAreaColorMenu = Ext.extend(Ext.menu.Menu, {
 		}
 	}
 });
-Ext.reg('htmlareacolormenu', Ext.ux.menu.HTMLAreaColorMenu);
+Ext.reg('htmlareacolormenu', 'Ext.ux.menu.HTMLAreaColorMenu');
 /*
  * Color palette trigger field
  * Based on http://www.extjs.com/forum/showthread.php?t=89312
@@ -3941,7 +3941,7 @@ Ext.ux.form.ColorPaletteField = Ext.extend(Ext.form.TriggerField, {
 		return HCHARS.charAt( ( n - n % 16 ) / 16 ) + HCHARS.charAt( n % 16 );
 	}
 });
-Ext.reg('colorpalettefield', Ext.ux.form.ColorPaletteField);
+Ext.reg('colorpalettefield', 'Ext.ux.form.ColorPaletteField');
 /**
  * Internet Explorer returns an item having the _name_ equal to the given id, even if it's not having any id.
  * This way it can return a different form field even if it's not a textarea.  This works around the problem by

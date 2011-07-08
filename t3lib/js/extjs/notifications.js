@@ -48,7 +48,7 @@ TYPO3.Components.Window = Ext.extend(Ext.Window, {
 		TYPO3.Components.Window.superclass.constructor.call(this, config);
 	}
 });
-Ext.reg('TYPO3window', TYPO3.Components.Window);
+Ext.reg('TYPO3window', 'TYPO3.Components.Window');
 
 
 /**

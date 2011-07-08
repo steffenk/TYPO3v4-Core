@@ -6,11 +6,11 @@
  */
 /**
  * @class Ext.ux.TabCloseMenu
- * @extends Object 
+ * @extends Object
  * Plugin (ptype = 'tabclosemenu') for adding a close context menu to tabs. Note that the menu respects
  * the closable configuration on the tab. As such, commands like remove others and remove all will not
  * remove items that are not closable.
- * 
+ *
  * @constructor
  * @param {Object} config The configuration options
  * @ptype tabclosemenu
@@ -27,10 +27,10 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
      * The text for closing all tabs except the current one. Defaults to <tt>'Close Other Tabs'</tt>.
      */
     closeOtherTabsText: 'Close Other Tabs',
-    
+
     /**
      * @cfg {Boolean} showCloseAll
-     * Indicates whether to show the 'Close All' option. Defaults to <tt>true</tt>. 
+     * Indicates whether to show the 'Close All' option. Defaults to <tt>true</tt>.
      */
     showCloseAll: true,
 
@@ -39,13 +39,13 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
      * <p>The text for closing all tabs. Defaults to <tt>'Close All Tabs'</tt>.
      */
     closeAllTabsText: 'Close All Tabs',
-    
+
     /**
 	 * @cfg {Array} custom menu entries
 	 */
 	customMenuEntries: [],
 
-    
+
     constructor : function(config){
         Ext.apply(this, config || {});
     },
@@ -59,12 +59,12 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
             destroy: this.destroy
         });
     },
-    
+
     destroy : function(){
         Ext.destroy(this.menu);
         delete this.menu;
         delete this.tabs;
-        delete this.active;    
+        delete this.active;
     },
 
     // private
@@ -74,7 +74,7 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
             disableAll = true,
             disableOthers = true,
             closeAll = m.getComponent('closeall');
-        
+
         m.getComponent('close').setDisabled(!item.closable);
         tabs.items.each(function(){
             if(this.closable){
@@ -90,11 +90,11 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
         if(closeAll){
             closeAll.setDisabled(disableAll);
         }
-        
+
         e.stopEvent();
         m.showAt(e.getPoint());
     },
-    
+
     createMenu : function(){
         if(!this.menu){
             var items = [{
@@ -125,33 +125,33 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
             		items.push(item);
             	});
             }
-            
+
             this.menu = new Ext.menu.Menu({
                 items: items
             });
         }
         return this.menu;
     },
-    
+
     onClose : function(){
         this.tabs.remove(this.active);
     },
-    
+
     onCloseOthers : function(){
         this.doClose(true);
     },
-    
+
     onCloseAll : function(){
         this.doClose(false);
     },
-    
+
     doClose : function(excludeActive){
         var items = [];
         this.tabs.items.each(function(item){
             if(item.closable){
                 if(!excludeActive || item != this.active){
                     items.push(item);
-                }    
+                }
             }
         }, this);
         Ext.each(items, function(item){
@@ -160,4 +160,4 @@ Ext.ux.TabCloseMenu = Ext.extend(Object, {
     }
 });
 
-Ext.preg('tabclosemenu', Ext.ux.TabCloseMenu);
+Ext.preg('tabclosemenu', 'Ext.ux.TabCloseMenu');

@@ -303,7 +303,7 @@ Ext.ux.DateTimePicker = Ext.extend(Ext.DatePicker, {
 		}
 	}
 });
-Ext.reg('datetimepicker', Ext.ux.DateTimePicker);
+Ext.reg('datetimepicker', 'Ext.ux.DateTimePicker');
 
 
 Ext.ux.menu.DateTimeMenu = Ext.extend(Ext.menu.Menu, {
@@ -335,4 +335,4 @@ Ext.ux.menu.DateTimeMenu = Ext.extend(Ext.menu.Menu, {
 		}
 	}
 });
-Ext.reg('datetimemenu', Ext.ux.menu.DateTimeMenu);
+Ext.reg('datetimemenu', 'Ext.ux.menu.DateTimeMenu');

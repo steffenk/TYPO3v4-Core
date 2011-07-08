@@ -482,4 +482,4 @@ TYPO3.Components.PageTree.TopPanel = Ext.extend(Ext.Panel, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.TopPanel', TYPO3.Components.PageTree.TopPanel);
+Ext.reg('TYPO3.Components.PageTree.TopPanel', 'TYPO3.Components.PageTree.TopPanel');

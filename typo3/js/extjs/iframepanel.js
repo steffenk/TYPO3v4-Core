@@ -124,4 +124,4 @@ TYPO3.iframePanel = Ext.extend(Ext.Panel, {
 		}
 	}
 });
-Ext.reg('iframePanel', TYPO3.iframePanel);
+Ext.reg('iframePanel', 'TYPO3.iframePanel');

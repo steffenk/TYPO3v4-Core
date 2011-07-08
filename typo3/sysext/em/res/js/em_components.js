@@ -810,7 +810,7 @@ TYPO3.EM.TerUpload = Ext.extend(Ext.form.FormPanel, {
 
 });
 
-Ext.reg('terupload', TYPO3.EM.TerUpload);
+Ext.reg('terupload', 'TYPO3.EM.TerUpload');
 
 TYPO3.EM.ExtensionUploadWindowInstance = null;
 TYPO3.EM.ExtensionUploadWindow = Ext.extend(Ext.Window, {

@@ -137,7 +137,7 @@ TYPO3.Components.PageTree.PageTreeNodeUI = Ext.extend(Ext.tree.TreeNodeUI, {
 	getDDHandles: function() {
 		var ddHandles = [this.iconNode, this.textNode, this.elNode];
 		var handlesIndex = ddHandles.length;
-		
+
 		var textNode = Ext.get(this.textNode);
 		for (var i = 0; i < textNode.dom.childNodes.length; ++i) {
 			if (textNode.dom.childNodes[i].nodeName === 'SPAN') {
@@ -164,4 +164,4 @@ TYPO3.Components.PageTree.PageTreeNodeUI = Ext.extend(Ext.tree.TreeNodeUI, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.PageTreeNodeUI', TYPO3.Components.PageTree.PageTreeNodeUI);
+Ext.reg('TYPO3.Components.PageTree.PageTreeNodeUI', 'TYPO3.Components.PageTree.PageTreeNodeUI');

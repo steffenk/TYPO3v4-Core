@@ -45,4 +45,4 @@ Ext.ux.Image = Ext.extend(Ext.BoxComponent, {
 		this.fireEvent('load', this);
 	}
 });
-Ext.reg('image', Ext.ux.Image);
+Ext.reg('image', 'Ext.ux.Image');

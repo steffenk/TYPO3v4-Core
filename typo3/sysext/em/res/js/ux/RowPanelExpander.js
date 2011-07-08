@@ -339,7 +339,7 @@ Ext.ux.grid.RowPanelExpander = Ext.extend(Ext.util.Observable, {
 	}
 });
 
-Ext.preg('rowexpander', Ext.ux.grid.RowPanelExpander);
+Ext.preg('rowexpander', 'Ext.ux.grid.RowPanelExpander');
 
 Ext.ux.plugins.FitWidthToParent = Ext.extend(Object, {
 	constructor : function(parent) {

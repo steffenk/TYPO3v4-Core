@@ -319,4 +319,4 @@ TYPO3.Components.PageTree.DeletionDropZone = Ext.extend(Ext.Panel, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.DeletionDropZone', TYPO3.Components.PageTree.DeletionDropZone);
+Ext.reg('TYPO3.Components.PageTree.DeletionDropZone', 'TYPO3.Components.PageTree.DeletionDropZone');

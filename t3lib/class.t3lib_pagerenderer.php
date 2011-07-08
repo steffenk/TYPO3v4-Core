@@ -99,7 +99,7 @@ class t3lib_PageRenderer implements t3lib_Singleton {
 	protected $prototypePath = 'contrib/prototype/';
 	protected $scriptaculousPath = 'contrib/scriptaculous/';
 	protected $extCorePath = 'contrib/extjs/';
-	protected $extJsPath = 'contrib/extjs/';
+	protected $extJsPath = 'contrib/ext4/';
 	protected $svgPath = 'contrib/websvg/';
 
 
@@ -1687,18 +1687,22 @@ class t3lib_PageRenderer implements t3lib_Singleton {
 			unset($this->jsFiles[$this->backPath . $this->extCorePath . 'ext-core' . ($this->enableExtCoreDebug ? '-debug' : '') . '.js']);
 		}
 
-			// include extJS
+		// include extJS
 		if ($this->addExtJS) {
-				// use the base adapter all the time
+			// use the base adapter all the time
 			$out .= '<script src="' . $this->processJsFile($this->backPath . $this->extJsPath .
-														   'adapter/' . ($this->enableExtJsDebug ?
-					str_replace('.js', '-debug.js', $this->extJSadapter) : $this->extJSadapter)) .
-					'" type="text/javascript"></script>' . LF;
-			$out .= '<script src="' . $this->processJsFile($this->backPath . $this->extJsPath .
-														   'ext-all' . ($this->enableExtJsDebug ? '-debug' : '') . '.js') .
+														   'ext-all' . ($this->enableExtJsDebug ? '-debug'
+																   : '') . '.js') .
 					'" type="text/javascript"></script>' . LF;
 
-				// add extJS localization
+			// Add migration tool temporary
+			$out .= '<script src="' . $this->processJsFile($this->backPath . $this->extJsPath .
+														   'compatibility/ext3-core-compat.js') . '" type="text/javascript"></script>' . LF;
+			$out .= '<script src="' . $this->processJsFile($this->backPath . $this->extJsPath .
+														   'compatibility/ext3-compat.js') . '" type="text/javascript"></script>' . LF;
+
+
+			// add extJS localization
 			$localeMap = $this->csConvObj->isoArray; // load standard ISO mapping and modify for use with ExtJS
 			$localeMap[''] = 'en';
 			$localeMap['default'] = 'en';

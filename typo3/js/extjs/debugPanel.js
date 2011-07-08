@@ -616,4 +616,4 @@ TYPO3.DebugPanel = Ext.extend(Ext.TabPanel, {
 	}
 });
 
-Ext.reg('typo3DebugPanel', TYPO3.DebugPanel);
+Ext.reg('typo3DebugPanel', 'TYPO3.DebugPanel');

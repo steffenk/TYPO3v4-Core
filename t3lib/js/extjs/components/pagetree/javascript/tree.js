@@ -604,4 +604,4 @@ TYPO3.Components.PageTree.Tree = Ext.extend(Ext.tree.TreePanel, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.Tree', TYPO3.Components.PageTree.Tree);
+Ext.reg('TYPO3.Components.PageTree.Tree', 'TYPO3.Components.PageTree.Tree');

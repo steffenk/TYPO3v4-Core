@@ -488,4 +488,4 @@ TYPO3.EM.Languages = Ext.extend(Ext.FormPanel, {
 
 	}
 });
-Ext.reg('extlanguages', TYPO3.EM.Languages);
+Ext.reg('extlanguages', 'TYPO3.EM.Languages');

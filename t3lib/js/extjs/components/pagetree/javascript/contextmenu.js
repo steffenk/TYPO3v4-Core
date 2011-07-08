@@ -194,4 +194,4 @@ TYPO3.Components.PageTree.ContextMenu = Ext.extend(Ext.menu.Menu, {
 });
 
 // XTYPE Registration
-Ext.reg('TYPO3.Components.PageTree.ContextMenu', TYPO3.Components.PageTree.ContextMenu);
+Ext.reg('TYPO3.Components.PageTree.ContextMenu', 'TYPO3.Components.PageTree.ContextMenu');

@@ -589,7 +589,7 @@ TYPO3.EM.ExtFilelist = Ext.extend(Ext.Panel, {
 });
 
 // register xtype
-Ext.reg('extfilelist', TYPO3.EM.ExtFilelist);
+Ext.reg('extfilelist', 'TYPO3.EM.ExtFilelist');
 
 
 TYPO3.EM.CodeMirror = Ext.extend(Ext.Panel, {
@@ -832,4 +832,4 @@ TYPO3.EM.CodeMirror = Ext.extend(Ext.Panel, {
 	}
 
 });
-Ext.reg('TYPO3.EM.CodeMirror', TYPO3.EM.CodeMirror);
+Ext.reg('TYPO3.EM.CodeMirror', 'TYPO3.EM.CodeMirror');

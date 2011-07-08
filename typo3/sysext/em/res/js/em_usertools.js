@@ -514,4 +514,4 @@ TYPO3.EM.UserTools = Ext.extend(Ext.Panel, {
 	}
 });
 
-Ext.reg('TYPO3.EM.UserTools', TYPO3.EM.UserTools);
+Ext.reg('TYPO3.EM.UserTools', 'TYPO3.EM.UserTools');
