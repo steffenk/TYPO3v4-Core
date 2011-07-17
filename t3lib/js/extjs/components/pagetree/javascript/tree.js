@@ -379,7 +379,8 @@ TYPO3.Components.PageTree.Tree = Ext.extend(Ext.tree.TreePanel, {
 	 * @return {void}
 	 */
 	enableInlineEditor: function() {
-		this.treeEditor = new TYPO3.Components.PageTree.TreeEditor(this);
+		// disabled for migrating. TODO: use alternative way to edit in tree
+		//this.treeEditor = new TYPO3.Components.PageTree.TreeEditor(this);
 	},
 
 	/**

@@ -134,6 +134,7 @@ class TYPO3backend {
 			'iframepanel'           => 'js/extjs/iframepanel.js',
 			'viewportConfiguration' => 'js/extjs/viewportConfiguration.js',
 			'util'					=> '../t3lib/js/extjs/util.js',
+			'ext4-compat'			=> 'js/extjs/ext4-compat.js',
 		);
 
 		if ($this->debug) {
