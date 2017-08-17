@@ -57,7 +57,7 @@ and add a line like
 
 ::
 
-   */15 * * * * /usr/local/bin/php /home/bob/www/typo3/cli_dispatch.phpsh scheduler
+   */15 * * * * /usr/local/bin/php /home/bob/www/typo3/sysext/core/bin/typo3 scheduler:run
 
 Save the modified crontab. Obviously the paths have to be adapted to
 your system. The above command will call up the Scheduler every 15
@@ -70,7 +70,7 @@ to enter, i.e. the user with which the job should run. Example
 
 ::
 
-   */15 * * * * www /usr/local/bin/php /home/bob/www/typo3/cli_dispatch.phpsh scheduler
+   */15 * * * * www /usr/local/bin/php /home/bob/www/typo3/sysext/core/bin/typo3 scheduler:run
 
 This will run the job as user "www".
 
